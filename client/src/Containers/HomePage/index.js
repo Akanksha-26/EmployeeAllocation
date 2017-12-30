@@ -2,22 +2,28 @@ import React from 'react'
 import { push } from 'react-router-redux'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import logo from './logo.svg';
+import Dragula from 'react-dragula';
 import './index.css';
 
 const Home = props => (
   <div>
-    <h1>Home</h1>
-    <p>Welcome home!</p>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to React</h1>
-      </header>
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
-      <button onClick={() => props.changePage()}>Go to about page via redux</button>
+      <h3 className="App-intro">
+        Employee Project Allocation 
+      </h3>
+      <div className="project">
+        <div className="project__employee">
+          <div className="project__employee__1"></div>
+          <div className="project__employee__2"></div>
+        </div>
+        <div className="project__table">
+
+        </div>
+        <div className="project__employee">
+          <div className="project__employee__3"></div>
+          <div className="project__employee__4"></div>
+        </div>
+      </div>
     </div>
   </div>
 )
