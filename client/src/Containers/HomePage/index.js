@@ -22,21 +22,34 @@ class Home extends Component{
           <h3 className="App-intro">
             Employee Project Allocation
           </h3>
-          <div className="project">
-            <div className="project__employee">
-              <div className="project__employee__1"></div>
-              <div className="project__employee__2"></div>
-            </div>
-            <div className="project__table">
+          <div className="project__wrapper">
+                <div className="project">
+                  <div className="project__employee-grid">
+                    <div className="project__employee">
+                      <div className="project__employee__title"></div>
+                      <span className="popover above">Hey bro, cool popover!</span>
+                    </div>
+                    <div className="project__employee">
+                      <div className="project__employee__title"></div>
+                      <span className="popover above">Hey bro, cool!</span>
+                    </div>
+                    <div className="project__employee">
+                      <div className="project__employee__title"></div>
+                      <span className="popover above">He, cool!</span>
+                    </div>
+                    <div className="project__employee">
+                      <div className="project__employee__title"></div>
+                      <span className="popover above">He!</span>
+                    </div>
+                  </div>
 
-            </div>
-            <div className="project__employee">
-              <div className="project__employee__3"></div>
-              <div className="project__employee__4"></div>
-            </div>
-          </div>
+                  <div className="project__table">
+
+                  </div>
+                </div>
         </div>
-        <button onClick={() => fetchProjects()}>Go to about page via redux</button>
+        <div className="project__btn"><button onClick={() => fetchProjects()}>Go to about page via redux</button></div>
+      </div>
       </div>
     )
   }

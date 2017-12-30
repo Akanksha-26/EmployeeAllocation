@@ -1,45 +1,145 @@
+.project__wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 8rem;
+}
+
+
+
+/* project start */
 .project{
     display: flex;
     flex-flow: column;
     width: 250px;
     align-self: center;
+    position: relative;
+    margin: 1rem;
 }
 .project__table{
     height: 150px;
     width: 250px;
     background-color: #757575;
+    position: absolute;
+}
+/* redux button */
+.project__btn{
+    margin: 2rem;
+}
+/* redux button end */
+.project__employee-grid{
+    display: flex;
+    flex-flow: row;
+    z-index: 99;
 }
 .project__employee{
+    position: relative;
+    text-align: center;
+    flex: 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
-.project__employee__1{
-    background-color: #000000;
-    height: 45px;
-    width: 45px;
+.project__employee:nth-child(2n+1){
+    bottom: 45px;
+    right: -29px;
+}
+.project__employee:nth-child(2n+1)>.project__employee__title:first-of-type{
     border-top-left-radius: 22.5px;
     border-top-right-radius: 22.5px;
 }
-.project__employee__2{
-    background-color: #000000;
-    height: 45px;
-    width: 45px;
-    border-top-left-radius: 22.5px;
-    border-top-right-radius: 22.5px;
-
+.project__employee:nth-child(2n){
+    top: 150px;
+    right: 35px;
 }
-.project__employee__3{
-    background-color: #000000;
-    height: 45px;
-    width: 45px;
+.project__employee:nth-child(2n)>.project__employee__title:first-of-type{
     border-bottom-left-radius: 22.5px;
     border-bottom-right-radius: 22.5px;
-    
 }
-.project__employee__4{
+.project__employee__title{
     background-color: #000000;
     height: 45px;
     width: 45px;
-    border-bottom-left-radius: 22.5px;
-    border-bottom-right-radius: 22.5px;  
 }
+
+/* The element to hover over */
+.project__employee .popover {
+    background-color: white;
+    border-radius: 5px;
+    bottom: 42px;
+    color: black;
+    display: none;
+    font-size: 12px;
+    font-family: 'Helvetica',sans-serif;
+    left: -95px;
+    padding: 7px 10px;
+    position: absolute;
+    width: 200px;
+    z-index: 4;
+  }
+  .project__employee .popover:before {
+    border-top: 7px solid white;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    bottom: -7px;
+    content: '';
+    display: block;
+    left: 50%;
+    margin-left: -7px;
+    position: absolute;
+  }
+  .project__employee:hover .popover {
+    display: block;
+    -webkit-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
+  }
+  
+  @-webkit-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes move-up {
+    from {
+      bottom: 30px;
+    }
+    to {
+      bottom: 42px;
+    }
+  }
+  @-moz-keyframes move-up {
+    from {
+      bottom: 30px;
+    }
+    to {
+      bottom: 42px;
+    }
+  }
+  @-ms-keyframes move-up {
+    from {
+      bottom: 30px;
+    }
+    to {
+      bottom: 42px;
+    }
+  }
+  
