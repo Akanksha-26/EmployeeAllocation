@@ -9,14 +9,14 @@
       "2": "{\"name\":\"Innovacer\",\"location\":\"Noida\",\"employeeIds\":[5,6,7,8],\"id\":2}"
     },
     "employee": {
-      "1": "{\"name\":\"V S Nandakumar\",\"role\":\"Director General\",\"projectId\":1,\"id\":1}",
-      "2": "{\"name\":\"Satish K H\",\"role\":\"Assistant Grade I\",\"projectId\":1,\"id\":2}",
-      "3": "{\"name\":\"Nataraj S\",\"role\":\"Assistant Grade I\",\"projectId\":1,\"id\":3}",
-      "4": "{\"name\":\"Nataraj S\",\"role\":\"Assistant Grade I\",\"projectId\":1,\"id\":4}",
-      "5": "{\"name\":\"Karthik R\",\"role\":\"Assistant Grade II\",\"projectId\":2,\"id\":5}",
-      "6": "{\"name\":\"Purnima Pandey\",\"role\":\"Assistant Grade II\",\"projectId\":2,\"id\":6}",
-      "7": "{\"name\":\"Sreenath A N\",\"role\":\"Assistant Grade II\",\"projectId\":2,\"id\":7}",
-      "8": "{\"name\":\"Ananda G\",\"role\":\"Senior Assistant\",\"projectId\":2,\"id\":8}"
+      "1": "{\"name\":\"V S Nandakumar\",\"role\":\"Director General\",\"projectId\":1,\"id\":1,\"team\":\"Frontend Developers\"}",
+      "2": "{\"name\":\"Satish K H\",\"role\":\"Assistant Grade I\",\"projectId\":1,\"id\":2,\"team\":\"Frontend Developers\"}",
+      "3": "{\"name\":\"Nataraj S\",\"role\":\"Assistant Grade I\",\"projectId\":1,\"id\":3,\"team\":\"Frontend Developers\"}",
+      "4": "{\"name\":\"Nataraj S\",\"role\":\"Assistant Grade I\",\"projectId\":1,\"id\":4,\"team\":\"Administration\"}",
+      "5": "{\"name\":\"Karthik R\",\"role\":\"Assistant Grade II\",\"projectId\":2,\"id\":5,\"team\":\"Administration\"}",
+      "6": "{\"name\":\"Purnima Pandey\",\"role\":\"Assistant Grade II\",\"projectId\":2,\"id\":6,\"team\":\"Administration\"}",
+      "7": "{\"name\":\"Sreenath A N\",\"role\":\"Assistant Grade II\",\"projectId\":2,\"id\":7,\"team\":\"Administration\"}",
+      "8": "{\"name\":\"Ananda G\",\"role\":\"Senior Assistant\",\"projectId\":2,\"id\":8,\"team\":\"Administration\"}"
     }
   }
 }

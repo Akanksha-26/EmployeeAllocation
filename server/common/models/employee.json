@@ -11,6 +11,9 @@
     },
     "role": {
       "type": "string"
+    },
+    "team": {
+      "type": "string"
     }
   },
   "validations": [],
