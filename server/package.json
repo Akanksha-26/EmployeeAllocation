@@ -6,6 +6,7 @@
     "node": ">=4"
   },
   "scripts": {
+    "dev": "SET NODE_ENV=development&& nodemon server/server.js --watch server --watch common --watch service",
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
+    "nodemon": "1.14.6",
     "nsp": "^2.1.0"
   },
   "repository": {

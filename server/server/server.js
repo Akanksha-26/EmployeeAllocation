@@ -5,6 +5,13 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+var logMiddleware = function(req, res, next) {
+  // logging all incoming requests
+  console.log(req.method, req.path);
+  next(); // Passing the request to the next handler in the stack.
+};
+app.use(logMiddleware);
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
