@@ -14,7 +14,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "project":{
+      "type":"belongsTo",
+      "model":"project"
+    }
+  },
   "acls": [],
   "methods": {}
 }

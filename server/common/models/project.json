@@ -14,7 +14,12 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "employees":{
+      "type":"referencesMany",
+      "model":"employee"
+    }
+  },
   "acls": [],
   "methods": {}
 }
