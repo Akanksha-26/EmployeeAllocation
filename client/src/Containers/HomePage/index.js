@@ -5,51 +5,27 @@ import { connect } from 'react-redux'
 import Dragula from 'react-dragula';
 import './index.css';
 import {fetchProjects} from '../../Actions/projectActions'
+import Project from '../../Components/project';
 
 class Home extends Component{
-
   render = () => {
     let { fetchProjects, projects } = this.props;
 
     let projectDivs = projects.length > 0 ? projects.map(project => {
-      return <div key={project.id}>{project.name}</div>
+      return <Project key={project.id} project={project}/>
     }) : <div>Empty</div>
 
     return (
-    <div>
-      {projectDivs}
+      <div>
         <div className="App">
           <h3 className="App-intro">
             Employee Project Allocation
           </h3>
           <div className="project__wrapper">
-                <div className="project">
-                  <div className="project__employee-grid">
-                    <div className="project__employee">
-                      <div className="project__employee__title"></div>
-                      <span className="popover above">Hey bro, cool popover!</span>
-                    </div>
-                    <div className="project__employee">
-                      <div className="project__employee__title"></div>
-                      <span className="popover above">Hey bro, cool!</span>
-                    </div>
-                    <div className="project__employee">
-                      <div className="project__employee__title"></div>
-                      <span className="popover above">He, cool!</span>
-                    </div>
-                    <div className="project__employee">
-                      <div className="project__employee__title"></div>
-                      <span className="popover above">He!</span>
-                    </div>
-                  </div>
-
-                  <div className="project__table">
-
-                  </div>
-                </div>
+            {projectDivs} 
+          </div>
+          <div className="project__btn"><button onClick={() => fetchProjects()}>Fetch Project</button></div>
         </div>
-        <div className="project__btn"><button onClick={() => fetchProjects()}>Go to about page via redux</button></div>
-      </div>
       </div>
     )
   }
