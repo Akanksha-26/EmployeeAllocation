@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "project": 2,
+    "employee": 1
+  },
+  "models": {
+    "project": {
+      "1": "{\"name\":\"string\",\"location\":\"string\",\"id\":1}"
+    },
+    "employee": {}
+  }
+}
