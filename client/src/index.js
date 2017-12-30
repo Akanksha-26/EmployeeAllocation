@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'react-router-redux'
 import store, { history } from './store'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import App from './Containers/App'
 import registerServiceWorker from './registerServiceWorker';
 
@@ -13,9 +14,9 @@ const target = document.querySelector('#root')
 render(
     <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <MuiThemeProvider>
         <App />
-      </div>
+      </MuiThemeProvider>
     </ConnectedRouter>
   </Provider>,
   target
